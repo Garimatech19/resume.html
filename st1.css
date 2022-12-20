@@ -1,1 +1,69 @@
 
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;       
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+body {
+  background-color: #1D1F20;
+  padding-top: 40px;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.zoom-effect-container {
+    float:center;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-card {
+  position: center;
+  top: 0;
+  left: 0;
+  
+}
+
+.image-card img {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+a{
+  display: block;
+  text-align:left;
+  margin: fill;
+  width: 50%;
+  color: #aaa;
+}
+
+
+
+
